@@ -142,7 +142,7 @@ else:
     ahorro_pct = (balance / ingresos * 100) if ingresos > 0 else 0
 
     # Métricas adaptadas a móvil
-    cols = st.columns([1,1])
+    cols = st.columns(2)
     with cols[0]:
         st.metric("💰 Ingresos", f"${ingresos:,.0f}")
         st.metric("📈 Balance", f"${balance:,.0f}")
@@ -150,11 +150,19 @@ else:
         st.metric("💸 Gastos", f"${gastos:,.0f}")
         st.metric("💾 Ahorro %", f"{ahorro_pct:.1f}%")
 
+    # Gráfico circular
     pie = px.pie(values=[ingresos, gastos], names=["Ingresos", "Gastos"], title="Distribución Ingresos vs Gastos")
     st.plotly_chart(pie, use_container_width=True)
 
-    resumen = dff.groupby(["year", "month_name", "type"])["amount"].sum().reset_index()
-    bar = px.bar(resumen, x="month_name", y="amount", color="type", barmode="group", facet_col="year", title="Evolución mensual")
+    # Gráfico de evolución mensual ajustado
+    resumen = dff.groupby(["year", "month", "month_name", "type"])["amount"].sum().reset_index()
+    resumen = resumen.sort_values(["year", "month"])
+    bar = px.bar(
+        resumen,
+        x="month_name", y="amount", color="type",
+        barmode="group", facet_col="year",
+        title="Evolución mensual"
+    )
     st.plotly_chart(bar, use_container_width=True)
 
     # ==============================
@@ -163,11 +171,7 @@ else:
     st.subheader("📑 Movimientos")
     dff_reset = dff.reset_index()
 
-    st.markdown(
-        "<div style='max-height:400px; overflow-y:auto;'>",
-        unsafe_allow_html=True
-    )
-
+    st.markdown("<div style='max-height:400px; overflow-y:auto;'>", unsafe_allow_html=True)
     for _, row in dff_reset.sort_values("date", ascending=False).iterrows():
         cols = st.columns([2,2,2,2,2,3,1])
         cols[0].write(row["date"].date())
@@ -180,7 +184,6 @@ else:
             df = df.drop(row["index"])
             save_data(df)
             st.rerun()
-
     st.markdown("</div>", unsafe_allow_html=True)
 
     # ==============================
@@ -192,4 +195,5 @@ else:
         file_name="movimientos_filtrados.csv",
         mime="text/csv"
     )
+
 

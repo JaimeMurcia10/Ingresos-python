@@ -88,7 +88,6 @@ if uploaded_file:
     new_data = pd.read_csv(uploaded_file)
     expected_cols = ["date","type","category","method","amount","description"]
     if all(col in new_data.columns for col in expected_cols):
-        # Convertir fecha
         new_data["date"] = pd.to_datetime(new_data["date"], errors="coerce")
         df = pd.concat([df, new_data], ignore_index=True)
         save_data(df)
@@ -112,13 +111,11 @@ if not df.empty:
     }
     df["month_name"] = df["month"].map(month_names)
 
-    # Filtros con opción "Todos"
     year_filter = st.sidebar.multiselect("Año", ["Todos"] + sorted(df["year"].dropna().unique().tolist()), default=["Todos"])
     month_filter = st.sidebar.multiselect("Mes", ["Todos"] + sorted(df["month_name"].dropna().unique().tolist()), default=["Todos"])
     type_filter = st.sidebar.multiselect("Tipo", ["Todos"] + sorted(df["type"].dropna().unique().tolist()), default=["Todos"])
     category_filter = st.sidebar.multiselect("Categoría", ["Todos"] + sorted(df["category"].dropna().unique().tolist()), default=["Todos"])
 
-    # Aplicación de filtros
     dff = df.copy()
     if "Todos" not in year_filter:
         dff = dff[dff["year"].isin(year_filter)]
@@ -144,11 +141,14 @@ else:
     balance = ingresos - gastos
     ahorro_pct = (balance / ingresos * 100) if ingresos > 0 else 0
 
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("💰 Ingresos", f"${ingresos:,.0f}")
-    col2.metric("💸 Gastos", f"${gastos:,.0f}")
-    col3.metric("📈 Balance", f"${balance:,.0f}")
-    col4.metric("💾 Ahorro %", f"{ahorro_pct:.1f}%")
+    # Métricas adaptadas a móvil
+    cols = st.columns([1,1])
+    with cols[0]:
+        st.metric("💰 Ingresos", f"${ingresos:,.0f}")
+        st.metric("📈 Balance", f"${balance:,.0f}")
+    with cols[1]:
+        st.metric("💸 Gastos", f"${gastos:,.0f}")
+        st.metric("💾 Ahorro %", f"{ahorro_pct:.1f}%")
 
     pie = px.pie(values=[ingresos, gastos], names=["Ingresos", "Gastos"], title="Distribución Ingresos vs Gastos")
     st.plotly_chart(pie, use_container_width=True)
@@ -163,6 +163,11 @@ else:
     st.subheader("📑 Movimientos")
     dff_reset = dff.reset_index()
 
+    st.markdown(
+        "<div style='max-height:400px; overflow-y:auto;'>",
+        unsafe_allow_html=True
+    )
+
     for _, row in dff_reset.sort_values("date", ascending=False).iterrows():
         cols = st.columns([2,2,2,2,2,3,1])
         cols[0].write(row["date"].date())
@@ -175,6 +180,8 @@ else:
             df = df.drop(row["index"])
             save_data(df)
             st.rerun()
+
+    st.markdown("</div>", unsafe_allow_html=True)
 
     # ==============================
     # EXPORTAR

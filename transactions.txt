@@ -1,0 +1,71 @@
+﻿date,type,category,method,amount,description,month,year,month_name
+2025-01-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,1,2025,Enero
+2025-01-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,1,2025,Enero
+2025-01-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,1,2025,Enero
+2025-01-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,1,2025,Enero
+2025-01-01,Gasto,Transporte,Efectivo,200000.0,Gasto de Transporte,1,2025,Enero
+2025-01-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,1,2025,Enero
+2025-02-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,2,2025,Febrero
+2025-02-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,2,2025,Febrero
+2025-02-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,2,2025,Febrero
+2025-02-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,2,2025,Febrero
+2025-02-01,Gasto,Transporte,Efectivo,200000.0,Gasto de Transporte,2,2025,Febrero
+2025-02-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,2,2025,Febrero
+2025-03-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,3,2025,Marzo
+2025-03-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,3,2025,Marzo
+2025-03-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,3,2025,Marzo
+2025-03-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,3,2025,Marzo
+2025-03-01,Gasto,Transporte,Efectivo,200000.0,Gasto de Transporte,3,2025,Marzo
+2025-03-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,3,2025,Marzo
+2025-04-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,4,2025,Abril
+2025-04-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,4,2025,Abril
+2025-04-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,4,2025,Abril
+2025-04-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,4,2025,Abril
+2025-04-01,Gasto,Transporte,Efectivo,200000.0,Gasto de Transporte,4,2025,Abril
+2025-04-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,4,2025,Abril
+2025-05-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,5,2025,Mayo
+2025-05-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,5,2025,Mayo
+2025-05-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,5,2025,Mayo
+2025-05-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,5,2025,Mayo
+2025-05-01,Gasto,Transporte,Efectivo,200000.0,Gasto de Transporte,5,2025,Mayo
+2025-05-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,5,2025,Mayo
+2025-06-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,6,2025,Junio
+2025-06-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,6,2025,Junio
+2025-06-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,6,2025,Junio
+2025-06-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,6,2025,Junio
+2025-06-01,Gasto,Transporte,Efectivo,200000.0,Gasto de Transporte,6,2025,Junio
+2025-06-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,6,2025,Junio
+2025-07-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,7,2025,Julio
+2025-07-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,7,2025,Julio
+2025-07-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,7,2025,Julio
+2025-07-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,7,2025,Julio
+2025-07-01,Gasto,Transporte,Efectivo,200000.0,Gasto de Transporte,7,2025,Julio
+2025-07-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,7,2025,Julio
+2025-08-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,8,2025,Agosto
+2025-08-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,8,2025,Agosto
+2025-08-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,8,2025,Agosto
+2025-08-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,8,2025,Agosto
+2025-09-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,9,2025,Septiembre
+2025-09-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,9,2025,Septiembre
+2025-09-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,9,2025,Septiembre
+2025-09-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,9,2025,Septiembre
+2025-09-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,9,2025,Septiembre
+2025-10-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,10,2025,Octubre
+2025-10-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,10,2025,Octubre
+2025-10-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,10,2025,Octubre
+2025-10-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,10,2025,Octubre
+2025-10-01,Gasto,Transporte,Efectivo,200000.0,Gasto de Transporte,10,2025,Octubre
+2025-10-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,10,2025,Octubre
+2025-11-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,11,2025,Noviembre
+2025-11-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,11,2025,Noviembre
+2025-11-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,11,2025,Noviembre
+2025-11-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,11,2025,Noviembre
+2025-11-01,Gasto,Transporte,Efectivo,200000.0,Gasto de Transporte,11,2025,Noviembre
+2025-11-01,Gasto,Gastos hormiga,Efectivo,1000000.0,Gasto de Gastos hormiga,11,2025,Noviembre
+2025-12-01,Ingreso,Salario,Transferencia,5000000.0,Pago mensual,12,2025,Diciembre
+2025-12-01,Gasto,Arriendo,Efectivo,550000.0,Gasto de Arriendo,12,2025,Diciembre
+2025-12-01,Gasto,Servicios,Efectivo,200000.0,Gasto de Servicios,12,2025,Diciembre
+2025-12-01,Gasto,Inversiones,Efectivo,500000.0,Gasto de Inversiones,12,2025,Diciembre
+2025-09-16,Gasto,Pago banco,Transferencia,0.0,,9,2025,Septiembre
+2025-08-31,Ingreso,Sueldo,Transferencia,5000000.0,pago nomina,8,2025,Agosto
+2025-09-02,Gasto,Ropa,Efectivo,1000000.0,Ropa Monastery,9,2025,Septiembre
